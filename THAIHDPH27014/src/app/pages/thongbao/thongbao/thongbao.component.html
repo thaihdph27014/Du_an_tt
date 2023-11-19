@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Đặt hàng thành công</h3>
+          <p class="card-text">Cảm ơn bạn đã đặt hàng!</p>
+          <div class="py-1"><p class="card-text">Phương thức thanh toán: {{paymentMethod }}</p></div>
+      
+          <!-- 
+            Bạn có thể tùy chỉnh cách hiển thị số tiền, ví dụ: '1.2-2' sẽ hiển thị số tiền với 2 chữ số sau dấu thập phân.
+            Điều này phụ thuộc vào định dạng tiền tệ bạn sử dụng.
+          -->
+          <div class="py-4">
+            <a routerLink="/products" class="btn btn-primary">Tiếp tục mua sắm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="product">
+    <h2>Thông tin sản phẩm:</h2>
+    <p>Tên sản phẩm: {{ product.name }}</p>
+    <!-- Hiển thị thông tin khác của sản phẩm -->
+  </div>
+</div>  <div class="fireworks">
+  <div class="firework"></div>
+</div>
